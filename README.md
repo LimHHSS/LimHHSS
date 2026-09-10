@@ -1,10 +1,8 @@
-# HyunSu Lim
+# Hello, I'm HyunSu Lim 👋
 
-**Agentic AI · Computer Vision**
+Interested in **Agentic AI, Computer Vision, and Natural Language Processing**.
 
-AI 기능을 실제 서비스에 연결하는 데 관심이 있습니다.
-KT AIVLE SCHOOL 팀 프로젝트로 만든 시설안전 관리 플랫폼 **BOSS**를 바탕으로,
-서비스 구조를 정리하고 React·Vite 프론트엔드를 Next.js·TypeScript로 옮기고 있습니다.
+I majored in Artificial Intelligence. Recently, I've been focusing on building AI services that are useful in the real world.
 
 ## 사용하고 있는 기술
 
