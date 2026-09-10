@@ -2,7 +2,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 
-export const START = '2026-04-01';
+export const START = '2026-01-01';
 export function range(end) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(end) || end < START) throw new Error('Invalid end date');
   const start = new Date(START + 'T00:00:00Z');
