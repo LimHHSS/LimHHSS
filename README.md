@@ -29,3 +29,11 @@ KT AIVLE SCHOOL 팀 프로젝트로 만든 시설안전 관리 플랫폼 **BOSS*
 ## GitHub 활동
 
 [2026년 기여 기록 보기](https://github.com/LimHHSS?tab=overview&from=2026-09-01&to=2026-09-10#year-link-2026)
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LimHHSS/LimHHSS/output/bomberman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LimHHSS/LimHHSS/output/bomberman-contribution-graph.svg">
+  <img alt="잔디 위에서 움직이는 Bomberman 활동 그래프" src="https://raw.githubusercontent.com/LimHHSS/LimHHSS/output/bomberman-contribution-graph.svg" width="100%">
+</picture>
+
+<sub>실제 GitHub 기여 기록을 바탕으로 매일 갱신됩니다. 애니메이션: <a href="https://github.com/abozanona/pacman-contribution-graph">Arcade Contribution Graph</a></sub>
