@@ -1,0 +1,62 @@
+name: 활동 그래프 갱신
+on:
+  schedule:
+    - cron: '17 15 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/activity.yml']
+permissions:
+  contents: read
+concurrency:
+  group: profile-activity
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Bomberman 그래프 생성
+        uses: abozanona/pacman-contribution-graph@7332e1de7903ab780c3692a4127a59cc13872daa
+        with:
+          github_user_name: LimHHSS
+          games: bomberman
+      - uses: actions/upload-artifact@v4
+        with:
+          name: contribution-graphs
+          path: dist/*.svg
+          if-no-files-found: error
+          retention-days: 1
+  publish:
+    needs: generate
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          name: contribution-graphs
+          path: /tmp/contribution-graphs
+      - name: 그래프 이미지 반영
+        shell: bash
+        run: |
+          if git show-ref --verify --quiet refs/remotes/origin/output; then
+            git checkout output
+          else
+            git checkout --orphan output
+            git rm -rf .
+          fi
+          cp /tmp/contribution-graphs/*.svg .
+          test -s bomberman-contribution-graph.svg
+          test -s bomberman-contribution-graph-dark.svg
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add '*.svg'
+          if ! git diff --cached --quiet; then
+            git commit -m '활동 그래프 갱신'
+            git push origin output
+          fi
