@@ -77,3 +77,12 @@ jobs:
             git commit -m 'Update activity graph'
             git push origin output
           fi
+          graph_commit=$(git rev-parse HEAD)
+          git checkout main
+          git pull --ff-only origin main
+          python scripts/pin-graph.py "$graph_commit"
+          git add README.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update activity graph link'
+            git push origin main
+          fi
