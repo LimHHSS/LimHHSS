@@ -13,7 +13,7 @@ I received my B.S. in Artificial Intelligence from KNU in 2026, with the distinc
 ## GitHub Activity
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LimHHSS/LimHHSS/3b40f628a5593cfb09330ee87b34e6d61e48927d/bomberman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LimHHSS/LimHHSS/3b40f628a5593cfb09330ee87b34e6d61e48927d/bomberman-contribution-graph.svg">
-  <img alt="Bomberman Contribution Graph" src="https://raw.githubusercontent.com/LimHHSS/LimHHSS/3b40f628a5593cfb09330ee87b34e6d61e48927d/bomberman-contribution-graph.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LimHHSS/LimHHSS/821f25884ca3a270d60dbe4c6b7486d56a474972/bomberman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LimHHSS/LimHHSS/821f25884ca3a270d60dbe4c6b7486d56a474972/bomberman-contribution-graph.svg">
+  <img alt="Bomberman Contribution Graph" src="https://raw.githubusercontent.com/LimHHSS/LimHHSS/821f25884ca3a270d60dbe4c6b7486d56a474972/bomberman-contribution-graph.svg" width="100%">
 </picture>
